@@ -26,6 +26,8 @@ services:
       dockerfile: Dockerfile
       args:
         - TZ=${TZ}
+      platforms: 
+        - "linux/amd64"
     networks:
       - ckannet
       - dbnet
